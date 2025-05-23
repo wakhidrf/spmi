@@ -41,14 +41,13 @@
                     'K3', 'Teknik Mesin', 'Teknik Sipil', 'Ilmu Komputer', 'Ilmu Hukum',
                     'Sastra Inggris', 'Administrasi Pendidikan', 'Manajemen Pendidikan'
                 ],
-                // labelsLink: ['http://localhost:8000/diagram/M',
-                //     'http://localhost:8000/diagram/A', 'http://localhost:8000/diagram/IKep',
-                //     'http://localhost:8000/diagram/Ners', 'http://localhost:8000/diagram/K3',
-                //     'http://localhost:8000/diagram/TM', 'http://localhost:8000/diagram/TS',
-                //     'http://localhost:8000/diagram/IKom', 'http://localhost:8000/diagram/IH',
-                //     'http://localhost:8000/diagram/SI', 'http://localhost:8000/diagram/AP',
-                //     'http://localhost:8000/diagram/MP'
-                // ],
+                labelsLink: ['/diagram/M', '/diagram/A',
+                '/diagram/IKep', '/diagram/Ners',
+                '/diagram/K3', '/diagram/TM',
+                '/diagram/TS', '/diagram/IKom',
+                '/diagram/IH', '/diagram/SI',
+                'diagram/AP', '/diagram/MP'
+                ],
                 datasets: [{
                     label: 'Nilai Assesmen Tercapai',
                     data: [<?= $ass['M'] ?>, <?= $ass['A'] ?>, <?= $ass['IKep'] ?>, <?= $ass['Ners'] ?>,
