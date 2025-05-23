@@ -110,8 +110,7 @@
                     <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                         <h3>Data Program Studi Terdaftar Pada Sistem.</h3>
                         <p class="fst-italic">
-                            Berikut adalah data Program Studi yang terdaftar pada LPM Smart Sistem di Kampus <b>STMIK Pelita
-                                Nusantara</b>
+                            Berikut adalah data Program Studi yang terdaftar pada LPM Smart Sistem di <b>Universitas Gresik</b>
                         </p>
                         <ul>
                             @foreach ($data['p'] as $i)

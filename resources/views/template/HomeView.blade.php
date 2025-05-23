@@ -104,7 +104,7 @@
                 &copy; Copyright <strong><span>LPM SMART SISTEM</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                Created by <a href="https://rickyginting.github.io/">RMG</a>
+                Modified by <a href="https://github.com/wakhidrf/">Wakhid Rahmad Faisol</a>
             </div>
         </div>
     </footer>

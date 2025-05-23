@@ -11,7 +11,7 @@
 
                 <div class="section-title">
                     <h2>Diagram Pencapaian</h2>
-                    <p>Berikut ini adalah diagram pencapaian nilai asessmen setiap Program Studi di STMIK Pelita Nusantara
+                    <p>Berikut ini adalah diagram pencapaian nilai asessmen setiap Program Studi di Universitas Gresik
                     </p>
                 </div>
 
@@ -37,18 +37,23 @@
         const diagram = {
             type: 'bar',
             data: {
-                labels: ['Teknik Informatika', 'Rekayasa Perangkat Lunak', 'Teknologi Informasi', 'Bisnis Digital',
-                    'Rekayasa Komputer Jaringan', 'Manajement Informasi'
+                labels: ['Manajemen', 'Akuntansi', 'Ilmu Keperawatan', 'Profesi Ners',
+                    'K3', 'Teknik Mesin', 'Teknik Sipil', 'Ilmu Komputer', 'Ilmu Hukum',
+                    'Sastra Inggris', 'Administrasi Pendidikan', 'Manajemen Pendidikan'
                 ],
-                labelsLink: ['http://localhost:8000/diagram/TI',
-                    'http://localhost:8000/diagram/RPL', 'http://localhost:8000/diagram/TIF',
-                    'http://localhost:8000/diagram/BD', 'http://localhost:8000/diagram/TRKJ',
-                    'http://localhost:8000/diagram/MI'
-                ],
+                // labelsLink: ['http://localhost:8000/diagram/M',
+                //     'http://localhost:8000/diagram/A', 'http://localhost:8000/diagram/IKep',
+                //     'http://localhost:8000/diagram/Ners', 'http://localhost:8000/diagram/K3',
+                //     'http://localhost:8000/diagram/TM', 'http://localhost:8000/diagram/TS',
+                //     'http://localhost:8000/diagram/IKom', 'http://localhost:8000/diagram/IH',
+                //     'http://localhost:8000/diagram/SI', 'http://localhost:8000/diagram/AP',
+                //     'http://localhost:8000/diagram/MP'
+                // ],
                 datasets: [{
                     label: 'Nilai Assesmen Tercapai',
-                    data: [<?= $ass['TI'] ?>, <?= $ass['RPL'] ?>, <?= $ass['TIF'] ?>, <?= $ass['BD'] ?>,
-                        <?= $ass['TRKJ'] ?>, <?= $ass['MI'] ?>
+                    data: [<?= $ass['M'] ?>, <?= $ass['A'] ?>, <?= $ass['IKep'] ?>, <?= $ass['Ners'] ?>,
+                        <?= $ass['K3'] ?>, <?= $ass['TM'] ?>, <?= $ass['TS'] ?>, <?= $ass['IKom'] ?>,
+                        <?= $ass['IH'] ?>, <?= $ass['SI'] ?>, <?= $ass['AP'] ?>, <?= $ass['MP'] ?>
                     ],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',

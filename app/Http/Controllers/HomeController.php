@@ -96,12 +96,18 @@ class HomeController extends Controller
     public function diagram()
     {
         $ass = [
-            'TI' => Element::where('prodi_id', 1)->get()->sum('score_hitung'),
-            'RPL' => Element::where('prodi_id', 2)->get()->sum('score_hitung'),
-            'TIF' => Element::where('prodi_id', 3)->get()->sum('score_hitung'),
-            'BD' => Element::where('prodi_id', 4)->get()->sum('score_hitung'),
-            'TRKJ' => Element::where('prodi_id', 5)->get()->sum('score_hitung'),
-            'MI' => Element::where('prodi_id', 6)->get()->sum('score_hitung'),
+            'M' => Element::where('prodi_id', 1)->get()->sum('score_hitung'),
+            'A' => Element::where('prodi_id', 2)->get()->sum('score_hitung'),
+            'IKep' => Element::where('prodi_id', 3)->get()->sum('score_hitung'),
+            'Ners' => Element::where('prodi_id', 4)->get()->sum('score_hitung'),
+            'K3' => Element::where('prodi_id', 5)->get()->sum('score_hitung'),
+            'TM' => Element::where('prodi_id', 6)->get()->sum('score_hitung'),
+            'TS' => Element::where('prodi_id', 7)->get()->sum('score_hitung'),
+            'IKom' => Element::where('prodi_id', 8)->get()->sum('score_hitung'),
+            'IH' => Element::where('prodi_id', 9)->get()->sum('score_hitung'),
+            'SI' => Element::where('prodi_id', 10)->get()->sum('score_hitung'),
+            'AP' => Element::where('prodi_id', 11)->get()->sum('score_hitung'),
+            'MP' => Element::where('prodi_id', 12)->get()->sum('score_hitung'),
         ];
         return view('home.diagram.index', [
             'ass' => $ass,
